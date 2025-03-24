@@ -10,7 +10,6 @@ all:    $(MAIN); chmod u+x $(MAIN)
 	
 
 $(MAIN): $(OBJS) $(MAIN).c
-	
 	$(CC) $(CFLAGS) -o $(MAIN) $(MAIN).c $(OBJS)
 
 %.o: %.c %.h
