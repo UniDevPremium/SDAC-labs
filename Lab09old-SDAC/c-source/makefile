@@ -1,6 +1,6 @@
 CC = g++
 CFLAGS = -Wall -g
-SRCS = linked_list.c graph.c
+SRCS = linked_list.c graph.c min_heap.c graph_services.c partition.c
 OBJS = $(SRCS:.c=.o)
 HEADERS = $(SRCS:.c=.h)
 MAIN = driver

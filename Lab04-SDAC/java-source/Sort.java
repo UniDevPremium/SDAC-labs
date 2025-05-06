@@ -69,8 +69,32 @@ public class Sort {
     }
 
     public void heapSort(int[] array) {
-        System.out.println("heapSort non è ancora implementato");
+        int n = _parent(10);
+        System.out.println(n);
         return;
+    }
+
+    private int _parent(int i){
+        if (i <= 0) return 0;
+        return i / 2;
+    }
+
+    private int _left(int i){
+        if (i <= 0) return 0;
+        return i * 2;
+    }
+
+    private int _right(int i){
+        if (i <= 0) return 0;
+        return (i * 2) + 1;
+    }
+
+    private void _maxHeapify (int[] array, int i){
+
+        int l = _left(i);
+        int r = _right(i);
+
+        
     }
 
     public void insertionSort(int[] array) {
